@@ -1,0 +1,168 @@
+.container{
+    margin: 0 auto;
+    min-height: 100vw;
+}
+
+/*general*/
+html,
+body{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: inherit;
+    margin-left: 70px;
+}
+
+.header__text{
+    font-size: 7px;
+    margin-left: 85px;
+    margin-top: 0;
+
+}
+
+/*hero section*/
+.hero{
+    display: flex;
+    flex-direction: column;
+    background-color: #5f9dd8;
+    color: white;
+    /* height: 300px; */
+    padding: 50px;
+}
+
+.hero > .hero__left{
+    background: url('../assets/img-removebg-preview.png');
+    flex: 1;
+    /* padding-left: 100px;
+    margin-left: 40px; */
+       
+}
+
+.hero > .hero__right{
+    flex: 1;
+    /* padding-right: 195px;
+    margin-right: 50px;
+    margin-top: 50px; */
+}
+
+.hero > .hero__right .hero__title{
+    font-size: 30px;
+}
+
+.hero__cta{
+    width: 200px;
+    background-color: white;
+    color: #5f9dd8;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.cta__content-action{
+    width: 200px;
+    background-color: white;
+    color: #5f9dd8;
+    border-radius: 2px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #5f9dd8;
+    padding: 8px 12px;
+    font-weight: bold;
+    margin-top: 20px; 
+}
+
+.cta__content__line{
+    width: 80px;
+    margin-top: -15px;
+}
+
+/*cta section*/
+.cta{
+    margin: 20px 0;
+}
+
+.cta .cta__content{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta__content-action{
+    padding: 0.6rem;
+}
+
+/*service section*/
+.service{
+    background-color: #5f9dd8;
+    margin-top: 55px;
+    color: white;
+}
+
+.service__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+
+.service__line{
+    width: 50px;
+}
+
+/* .service_one{
+    padding-left: 40px;
+}
+
+.service_two{
+    padding-right: 40px;
+} */
+
+
+
+/*for mobile*/
+@media (min-width: 640px) {
+    
+}
+
+/*for laptop*/
+@media (min-width: 940px) {
+    
+    .hero{
+        flex-direction: row;
+        height: 500px;
+    }
+
+    .hero > .hero__left{
+        padding-left: 100px;
+        margin-left: 40px;
+           
+    }
+    
+    .hero > .hero__right{
+        padding-right: 195px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+    .service__content{
+        flex-direction: row;
+    }
+}
+
+/*for desktop*/
+@media (min-width: 1280px) {
+    
+}
